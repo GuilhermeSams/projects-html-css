@@ -1,0 +1,89 @@
+ * {
+    padding: 0;
+    margin: 0;
+ }
+
+
+ nav {
+
+    background-color: black;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    font-family: 'Passion One', cursive;
+ }
+
+ nav h1, p{
+    color: white;
+    font-size: 3vw;
+ }
+
+
+ #link {
+   font-size: 16px;
+   font-size: 1.5vw;
+
+ }
+
+ #link > a {
+   color: white;
+   text-decoration: none;
+   
+ }
+
+ #link > a:hover {
+   text-decoration: underline;
+   
+ }
+   
+
+ section {
+    margin-left: 30px;
+    margin-top: 45px;
+
+ }
+
+ section > p{
+    color: rgb(0, 0, 0);
+    font-size: 2vw;
+    padding-top: 2vw;
+ }
+
+
+ #image1 {
+    border-radius: 6px;
+    margin-left: 0;
+    padding-top: 30px;
+    padding-bottom: 40px;
+    background-position: center;
+    background-image: url(imagens/background001.jpg);
+    background-attachment: fixed;
+
+ }
+
+
+ #image2 {
+    border-radius: 6px;
+    margin-left: 0;
+    padding-top: 30px;
+    padding-bottom: 40px;
+    background-position: right;
+    background-image: url(imagens/background002.jpg);
+    background-attachment: fixed;
+ }
+
+ #image1 > p {
+    margin-left: 30px;
+    padding-left: 5px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.452);
+    width: 50%;
+ }
+
+ #image2 > p {
+    margin-left: 30px;
+    padding-left: 5px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.452);
+    width: 50%;
+ }
