@@ -3,32 +3,32 @@
     margin: 0;
  }
 
-
- nav {
-
+body {
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+   min-height: 100vh;
+}
+header {
     background-color: black;
     text-align: center;
-    padding-top: 50px;
-    padding-bottom: 50px;
-    font-family: 'Passion One', cursive;
- }
-
- nav h1, p{
     color: white;
-    font-size: 3vw;
  }
 
+ header h1{
+   padding-top: 50px;
+    font-size: 7vw;
+    font-family: 'Passion One', cursive;
+    font-variant: small-caps;
+    font-weight: bold;
+ }
 
- #link {
-   font-size: 16px;
-   font-size: 1.5vw;
-
+ header > p {
+   padding-bottom: 50px;
  }
 
  #link > a {
-   color: white;
    text-decoration: none;
-   
+   color: white;
+
  }
 
  #link > a:hover {
@@ -36,54 +36,78 @@
    
  }
    
-
  section {
-    margin-left: 30px;
-    margin-top: 45px;
-
+   padding-top: 10vh;
+   padding-bottom: 10vh;
+   line-height: 2em;
+   padding-left: 30px;
  }
 
- section > p{
+ section > p {
     color: rgb(0, 0, 0);
-    font-size: 2vw;
-    padding-top: 2vw;
+    font-size: 3vw;
+    line-height: 2.5em;
+    font-weight: 600;
+    font-family: 'Sriracha', cursive;
  }
-
 
  #image1 {
-    border-radius: 6px;
-    margin-left: 0;
-    padding-top: 30px;
-    padding-bottom: 40px;
-    background-position: center;
     background-image: url(imagens/background001.jpg);
-    background-attachment: fixed;
-
  }
-
 
  #image2 {
-    border-radius: 6px;
-    margin-left: 0;
-    padding-top: 30px;
-    padding-bottom: 40px;
-    background-position: right;
     background-image: url(imagens/background002.jpg);
-    background-attachment: fixed;
  }
-
- #image1 > p {
-    margin-left: 30px;
-    padding-left: 5px;
+ 
+.image_with_background > p{
     color: white;
     background-color: rgba(0, 0, 0, 0.452);
     width: 50%;
+    padding-left: 1vw;   
+}
+
+.image_with_background {
+   padding-bottom: 40px;
+   background-position: 100% 50%;
+   background-attachment: fixed;
+   background-size: cover;
+}
+
+ .icons > li{
+   display: flex;
+   padding-top: 5vh;
+   justify-content: center;
+   background-color: black;
  }
 
- #image2 > p {
-    margin-left: 30px;
-    padding-left: 5px;
-    color: white;
-    background-color: rgba(0, 0, 0, 0.452);
-    width: 50%;
+ .icons li {
+   display: flex;
  }
+
+ .icons ul{
+   display: flex;
+   list-style: none;
+   background-color: gray;
+   border-radius: 10px;
+   margin: 2vw;
+ }
+
+ .icons ul:hover {
+   background-color: rgb(185, 173, 173);
+ }
+
+.icons > p {
+   background-color: black;
+   text-align: center;
+   color: white;
+   padding-bottom: 5vh;
+   font-size: 1.2vw;
+}
+
+.icons a {
+   text-decoration: none;
+}
+
+.icons a:hover {
+   text-decoration: underline;
+}
