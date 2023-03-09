@@ -29,16 +29,15 @@ section#login {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
     background-color: white;
     width: 250px;
     height: 520px;
     border-radius: 20px;
     overflow: hidden;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.411);
-    transition: width 0.4s, height 0.4s;
     transition-timing-function: ease;
-
+    transition: width 0.4s, height 0.4s;
+    transform: translate(-50%, -50%);
 }
 
 section#login > div#imagem {
@@ -69,8 +68,32 @@ form > div.campo {
     width: 100%;
     display: block;
     height: 40px;
-    border-radius: 5px;
+    border-radius: 8px;
     margin: 5px 0px;
+    border: 2px solid #5f2c82;
+}
+
+div.campo > i {
+    color: white;
+    /*background-color: black;*/
+    font-size: 2em;
+    width: 40px;
+    padding: 5px;
+}
+
+div.campo > input {
+    width: calc(100% - 45px);
+    background-color: #49a09d;
+    font-size: 1em;
+    height: 99%;
+    border-radius: 8px;
+    border: 0px;
+    transform: translateY(-11px);
+}
+
+div.campo > input:focus-within {
+    background-color: white;
+    border: 0;
 }
 
 label {
@@ -118,6 +141,6 @@ form > a.botao:hover {
     background-color: #328885;
 }
 
-i {
-    color: white;
+::placeholder {
+    padding-left: 7px;
 }
