@@ -93,7 +93,7 @@ div.campo > input {
 
 div.campo > input:focus-within {
     background-color: white;
-    border: 0;
+    border: 0px;
 }
 
 label {
